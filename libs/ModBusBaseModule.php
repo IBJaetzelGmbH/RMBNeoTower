@@ -18,6 +18,27 @@ class ModBusBaseModule extends IPSModule
         $this->ConnectParent('{A5F663AB-C400-4FE5-B207-4D67CC030564}');
         $this->RegisterPropertyInteger('Interval', 0);
 
+        if (!IPS_VariableProfileExists('RMBNeoTower.Druck')) {
+            $this->RegisterProfileFloat('RMBNeoTower.Druck', 'Gas', '', ' bar', 0.0, 0, 0.1);
+        }
+
+        if (!IPS_VariableProfileExists('RMBNeoTower.kW')) {
+            $this->RegisterProfileFloat('RMBNeoTower.kW', 'Electricity', '', ' kW', 0.0, 0, 0.1);
+        }
+
+        if (!IPS_VariableProfileExists('RMBNeoTower.Minuten')) {
+            $this->RegisterProfileFloat('RMBNeoTower.Minuten', 'Clock', '', ' min', 0.0, 0, 1);
+        }
+
+        if (!IPS_VariableProfileExists('RMBNeoTower.Stunden')) {
+            $this->RegisterProfileFloat('RMBNeoTower.Stunden', 'Clock', '', ' Std', 0.0, 0, 1);
+        }
+
+        if (!IPS_VariableProfileExists('RMBNeoTower.Prozent')) {
+            $this->RegisterProfileFloat('RMBNeoTower.Prozent', 'Intensity', '', ' &', 0.0, 0, 0.1);
+        }
+
+
         foreach (static::$Variables as $Pos => $Variable) {
             $Variables[] = [
                 'Ident'     => $this->NameToIdent($Variable[0]),
