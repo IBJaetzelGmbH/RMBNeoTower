@@ -242,7 +242,7 @@ class ModBusBaseModule extends IPSModule
     {
         $search = ['Ä', 'Ö', 'Ü', 'ä', 'ö', 'ü', 'ß', '.', ' '];
         $replace = ['Ae', 'Oe', 'Ue', 'ae', 'oe', 'ue', 'ss', '_', ''];
-        return str_replace($search, $replace, $string);
+        return str_replace($search, $replace, $Value);
     }
 }
 
