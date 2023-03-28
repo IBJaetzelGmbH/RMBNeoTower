@@ -66,7 +66,7 @@ class ModBusBaseModule extends IPSModule
         if (count($NewRows) != 0) {
             foreach ($NewRows as $NewVariable) {
                 $Variables[] = [
-                    'Ident'     => $this->NameToIdent($Variable[0]),
+                    'Ident'     => $this->NameToIdent($NewVariable[0]),
                     'Name'      => $this->Translate($NewVariable[0]),
                     'VarType'   => $NewVariable[1],
                     'Profile'   => $NewVariable[2],
