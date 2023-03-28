@@ -1,9 +1,11 @@
 {
     "id": "{1FCD1930-32CB-361E-B695-08781711E7C4}",
-    "name": "Read Analog",
+    "name": "RMB neoTower Read Analog",
     "type": 3,
     "vendor": "RMB Energie GmbH",
-    "aliases": [],
+    "aliases": [
+        "RMB neoTower Read Analog"
+    ],
     "parentRequirements": [
         "{E310B701-4AE7-458E-B618-EC13A1A6F6A8}"
     ],

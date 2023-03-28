@@ -1,5 +1,35 @@
 {
-    "elements": [],
-    "actions": [],
+    "elements": [
+        {
+            "type": "ValidationTextBox",
+            "name": "Name",
+            "caption": "Name"
+        },
+        {
+            "type": "NumberSpinner",
+            "name": "Interval",
+            "caption": "Interval"
+        }
+    ],
+    "actions": [
+        {
+            "type": "Configurator",
+            "name": "Configurator",
+            "caption": "RMB Neo Tower Configurator",
+            "delete": false,
+            "sort": {
+                "column": "name",
+                "direction": "ascending"
+            },
+            "columns": [
+                {
+                    "caption": "Instancename",
+                    "name": "name",
+                    "width": "auto"
+                }
+            ],
+            "values": []
+        }
+    ],
     "status": []
 }

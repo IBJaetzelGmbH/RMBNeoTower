@@ -1,12 +1,18 @@
 {
     "id": "{0FAC9D66-392B-4B43-D944-68B299F56AFE}",
-    "name": "Konfigurator",
+    "name": "RMB neoTower Konfigurator",
     "type": 4,
     "vendor": "RMB Energie GmbH",
-    "aliases": [],
-    "parentRequirements": [],
+    "aliases": [
+        "RMB neoTower Konfigurator"
+    ],
+    "parentRequirements": [
+        "{E310B701-4AE7-458E-B618-EC13A1A6F6A8}"
+    ],
     "childRequirements": [],
-    "implemented": [],
+    "implemented": [
+        "{77B31ABB-18FA-4B91-BB63-E5B2AB5588F4}"
+    ],
     "prefix": "RNTK",
     "url": "https://www.ib-jaetzel.de"
 }

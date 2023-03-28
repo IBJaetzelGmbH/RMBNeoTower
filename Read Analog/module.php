@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 require_once __DIR__ . '/../libs/ModBusBaseModule.php';
 
-    class ReadAnalog extends ModBusBaseModule
+    class RMBneoTowerReadAnalog extends ModBusBaseModule
     {
         const PREFIX = 'RNTRA';
 

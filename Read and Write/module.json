@@ -1,9 +1,11 @@
 {
     "id": "{15CAFB56-AE24-9D62-C65F-FD20E34C3AEE}",
-    "name": "Read and Write",
+    "name": "RMB neoTower Read and Write",
     "type": 3,
     "vendor": "RMB Energie GmbH",
-    "aliases": [],
+    "aliases": [
+        "RMB neoTower Read and Write"
+    ],
     "parentRequirements": [
         "{E310B701-4AE7-458E-B618-EC13A1A6F6A8}"
     ],

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 require_once __DIR__ . '/../libs/ModBusBaseModule.php';
 
-    class ReadandWrite extends ModBusBaseModule
+    class RMBneoTowerReadandWrite extends ModBusBaseModule
     {
         const PREFIX = 'RNTRW';
 
