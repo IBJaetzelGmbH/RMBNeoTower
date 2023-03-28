@@ -1,0 +1,12 @@
+{
+    "id": "{15CAFB56-AE24-9D62-C65F-FD20E34C3AEE}",
+    "name": "Read and Write",
+    "type": 3,
+    "vendor": "RMB Energie GmbH",
+    "aliases": [],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "RNTRW",
+    "url": "https://www.ib-jaetzel.de"
+}

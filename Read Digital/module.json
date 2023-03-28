@@ -1,0 +1,12 @@
+{
+    "id": "{A33DBA25-0169-7260-44EB-C3262BEB5A56}",
+    "name": "Read Digital",
+    "type": 3,
+    "vendor": "RMB Energie GmbH",
+    "aliases": [],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "RNTRD",
+    "url": "https://www.ib-jaetzel.de"
+}

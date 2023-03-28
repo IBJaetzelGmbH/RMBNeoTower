@@ -1,0 +1,12 @@
+{
+    "id": "{0FAC9D66-392B-4B43-D944-68B299F56AFE}",
+    "name": "Konfigurator",
+    "type": 4,
+    "vendor": "RMB Energie GmbH",
+    "aliases": [],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "RNTK",
+    "url": "https://www.ib-jaetzel.de"
+}

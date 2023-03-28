@@ -1,0 +1,12 @@
+{
+    "id": "{1FCD1930-32CB-361E-B695-08781711E7C4}",
+    "name": "Read Analog",
+    "type": 3,
+    "vendor": "RMB Energie GmbH",
+    "aliases": [],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "RNTRA",
+    "url": "https://www.ib-jaetzel.de"
+}
