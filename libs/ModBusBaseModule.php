@@ -35,7 +35,7 @@ class ModBusBaseModule extends IPSModule
         }
 
         if (!IPS_VariableProfileExists('RMBNeoTower.Prozent')) {
-            $this->RegisterProfileFloat('RMBNeoTower.Prozent', 'Intensity', '', ' &', 0.0, 0, 0.1, 2);
+            $this->RegisterProfileFloat('RMBNeoTower.Prozent', 'Intensity', '', ' %', 0.0, 0, 0.1, 2);
         }
 
         foreach (static::$Variables as $Pos => $Variable) {
@@ -260,8 +260,8 @@ class ModBusBaseModule extends IPSModule
 
     private function NameToIdent($Value)
     {
-        $search = ['Ä', 'Ö', 'Ü', 'ä', 'ö', 'ü', 'ß', '.', ' '];
-        $replace = ['Ae', 'Oe', 'Ue', 'ae', 'oe', 'ue', 'ss', '_', ''];
+        $search = ['Ä', 'Ö', 'Ü', 'ä', 'ö', 'ü', 'ß', '.', ' ', '(', ')'];
+        $replace = ['Ae', 'Oe', 'Ue', 'ae', 'oe', 'ue', 'ss', '_', '', '', ''];
         return str_replace($search, $replace, $Value);
     }
 }
