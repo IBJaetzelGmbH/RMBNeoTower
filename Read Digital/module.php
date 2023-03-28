@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 require_once __DIR__ . '/../libs/ModBusBaseModule.php';
 
-    class ReadDigital extends GrowattModBus
+    class ReadDigital extends ModBusBaseModule
     {
         const PREFIX = 'RD';
 
