@@ -55,7 +55,7 @@ class ModBusBaseModule extends IPSModule
                 $this->EnableAction($Variable['Ident']);
             }
             foreach ($NewRows as $Index => $Row) {
-                if ($Variable['Ident'] == str_replace(' ', '', $Row[0])) {
+                if ($Variable['Ident'] == $this->NameToIdent($Row[0])) {
                     unset($NewRows[$Index]);
                 }
             }
