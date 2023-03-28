@@ -6,7 +6,7 @@ require_once __DIR__ . '/../libs/ModBusBaseModule.php';
 
     class ReadDigital extends ModBusBaseModule
     {
-        const PREFIX = 'RD';
+        const PREFIX = 'RNTRD';
 
         public static $Variables = [
             ['Störung', VARIABLETYPE_BOOLEAN, '~Alert', null,  0x0000, 2, 1,  null, true],
