@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-eval('declare(strict_types=1);namespace RMBNeoTower {?>' . file_get_contents(__DIR__ . '/../libs/vendor/SymconModulHelper/SemaphoreHelper.php') . '}');
-eval('declare(strict_types=1);namespace RMBNeoTower {?>' . file_get_contents(__DIR__ . '/../libs/vendor/SymconModulHelper/VariableProfileHelper.php') . '}');
+eval('declare(strict_types=1);namespace RMB {?>' . file_get_contents(__DIR__ . '/../libs/vendor/SymconModulHelper/SemaphoreHelper.php') . '}');
+eval('declare(strict_types=1);namespace RMB {?>' . file_get_contents(__DIR__ . '/../libs/vendor/SymconModulHelper/VariableProfileHelper.php') . '}');
 
 class ModBusBaseModule extends IPSModule
 {
-    use RMBNeoTower\Smeaphore;
-    use RMBNeoTower\VariableProfileHelper;
+    use RMB\Smeaphore;
+    use RMB\VariableProfileHelper;
     const Swap = false;
 
     public function Create()
