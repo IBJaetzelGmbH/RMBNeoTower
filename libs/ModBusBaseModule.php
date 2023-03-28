@@ -20,7 +20,7 @@ class ModBusBaseModule extends IPSModule
 
         foreach (static::$Variables as $Pos => $Variable) {
             $Variables[] = [
-                'Ident'     => str_replace(' ', '', $Variable[0]),
+                'Ident'     => $this->NameToIdent($Variable[0]),
                 'Name'      => $this->Translate($Variable[0]),
                 'VarType'   => $Variable[1],
                 'Profile'   => $Variable[2],
@@ -66,7 +66,7 @@ class ModBusBaseModule extends IPSModule
         if (count($NewRows) != 0) {
             foreach ($NewRows as $NewVariable) {
                 $Variables[] = [
-                    'Ident'     => str_replace(' ', '', $NewVariable[0]),
+                    'Ident'     => $this->NameToIdent($Variable[0]),
                     'Name'      => $this->Translate($NewVariable[0]),
                     'VarType'   => $NewVariable[1],
                     'Profile'   => $NewVariable[2],
@@ -236,6 +236,13 @@ class ModBusBaseModule extends IPSModule
                 return $Value;
         }
         return null;
+    }
+
+    private function NameToIdent($Value)
+    {
+        $search = ['Ä', 'Ö', 'Ü', 'ä', 'ö', 'ü', 'ß', '.', ' '];
+        $replace = ['Ae', 'Oe', 'Ue', 'ae', 'oe', 'ue', 'ss', '_', ''];
+        return str_replace($search, $replace, $string);
     }
 }
 
