@@ -1,23 +1,23 @@
 <?php
 
 declare(strict_types=1);
-    class ReadandWrite extends IPSModule
+
+require_once __DIR__ . '/../libs/ModBusBaseModule.php';
+
+    class ReadandWrite extends ModBusBaseModule
     {
-        public function Create()
-        {
-            //Never delete this line!
-            parent::Create();
-        }
+        const PREFIX = 'RNTRW';
+
+        public static $Variables = [
+            ['Elektrische Soll Leistung', VARIABLETYPE_FLOAT, 'TRMBNeoTower.kW', 0.1,  0x6000, 6, 6,  true],
+			['Anforderung Entladepumpe', VARIABLETYPE_BOOLEAN, '~Switch', null,  0x400, 5, 5,  true],
+			['Start Stopp Extern', VARIABLETYPE_BOOLEAN, '~Switch', null,  0x4001, 5, 5,  true],
+			['Sperre', VARIABLETYPE_BOOLEAN, '~Switch', null,  0x4002, 5, 5,  true],
+        ];
 
         public function Destroy()
         {
             //Never delete this line!
             parent::Destroy();
-        }
-
-        public function ApplyChanges()
-        {
-            //Never delete this line!
-            parent::ApplyChanges();
         }
     }
