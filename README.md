@@ -16,3 +16,9 @@ Folgende Module beinhaltet das RMBNeoTower Repository:
 
 - __Read and Write__ ([Dokumentation](Read%20and%20Write))  
 	Die Read and Write Instanz listet alle Register der Kategorie auf und kann diese ebenfalls beschrieben.
+
+
+# Changelog
+
+__29.03.2023 - Version 1.0__  
+Erste Version online gestellt.
