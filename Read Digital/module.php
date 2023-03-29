@@ -33,9 +33,6 @@ require_once __DIR__ . '/../libs/ModBusBaseModule.php';
             ['Fehler STB Ausgelöst', VARIABLETYPE_BOOLEAN, '~Alert', null,  0x0015, 2, 1,  null, true],
             ['Fehler Brennstoff Motorproblem', VARIABLETYPE_BOOLEAN, '~Alert', null,  0x0016, 2, 1,  null, true],
             ['Fehler Motor Springt nicht An', VARIABLETYPE_BOOLEAN, '~Alert', null,  0x0017, 2, 1,  null, true],
-
-            //['Active Power Rate', VARIABLETYPE_INTEGER, '~Intensity.100', null,  0x0003, 3, 1,  6, true],
-            //['Memory State', VARIABLETYPE_INTEGER, 'Growatt.MemoryState', null,  0x0002, 3, 1,  6, true]
         ];
 
         public function Destroy()
