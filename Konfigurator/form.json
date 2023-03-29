@@ -34,7 +34,7 @@
         {
             "type": "Configurator",
             "name": "Configurator",
-            "caption": "RMB Neo Tower Configurator",
+            "caption": "RMB neoTower Configurator",
             "delete": false,
             "sort": {
                 "column": "name",
