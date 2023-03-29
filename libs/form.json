@@ -22,7 +22,7 @@
         {
             "name": "Interval",
             "type": "NumberSpinner",
-            "caption": "Timer Interval",
+            "caption": "Update Interval",
             "suffix": "ms",
             "minimum": 0
         },
