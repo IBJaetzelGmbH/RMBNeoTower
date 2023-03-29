@@ -119,14 +119,6 @@
             "type": "Button",
             "caption": "Read values",
             "onClick": ""
-        },
-        {
-            "type": "Label",
-            "caption": "Spenden / Schenkung"
-        },
-        {
-            "type": "Label",
-            "caption": "Dieses Modul ist für die nicht kommerzielle Nutzung kostenlos, Schenkungen als Unterstützung für den Autor werden hier akzeptiert:    "
         }
     ],
     "status": []
