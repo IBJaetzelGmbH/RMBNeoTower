@@ -34,5 +34,5 @@ __Konfigurationsseite__:
 Name     | Beschreibung
 -------- | ------------------
 Name     | Der Name wird verwendet, um die Instanzen im Objektbaum einzusortieren.
-Aktualisierungsintervall | Dieser Wert gibt in ms an, wie oft die Werte abgefragt werden sollen, der Wert wird beim Anlegen der einzelnen Instanzen übernommen.
+Aktualisierungsintervall | Dieser Wert gibt in ms an, wie oft die Werte abgefragt werden sollen, der Wert wird beim Anlegen der einzelnen Instanzen übernommen. Als Standard sind hier 5000 ms hinterlegt.
 RMB neoTower Konfigurator | Über diese Liste werden die einzelnen Instanzen zum Abrufen / Schreiben der Werte erstellt, die Instanzen werden soweit eingerichtet, dass diese automatisch funktionieren.

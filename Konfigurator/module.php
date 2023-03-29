@@ -15,7 +15,7 @@ declare(strict_types=1);
             parent::Create();
 
             $this->RegisterPropertyString('Name', '');
-            $this->RegisterPropertyInteger('Interval', 0);
+            $this->RegisterPropertyInteger('Interval', 5000);
             $this->RequireParent('{A5F663AB-C400-4FE5-B207-4D67CC030564}');
         }
 
